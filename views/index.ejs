@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App socket.io + express</title>
+  </head>
+  <body>
+
+    <div class="chat-container">
+        <h2 class="page-title">Chat App with socket.io + Express</h2>
+        
+        <div>
+            <a href="/sql_data">Show SQL Data</a>
+        </div>
+  
+        <div class="chat-messages">
+          <div class="message"></div>
+          
+        </div>
+        <div class="read-info" id="read-info"></div>
+        <form class="chat-form" id="form">
+            <input type="text" id="name" />
+            <input type="text" id="message" />
+            <button type="button" id="btn_confirm_read">Read</button>
+            <button type="button" id="btn_send">Send</button>
+        </form>
+      </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
